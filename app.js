@@ -15,6 +15,13 @@ button.addEventListener("click", function() {
         const li = document.createElement("li");
                 // Asignamos el texto de la tarea al contenido del <li>
         li.textContent = task;
+
+        // Le agregamos un event listener a cada <li> recién creado
+        // para que cuando se haga clic, se marque como completado o no
+        // Esto se hace agregando (o quitando) una clase llamada "completed"
+        li.addEventListener("click", function() {
+            li.classList.toggle("completed");
+        });
                 // Agregamos el <li> al final del <ul> para que se muestre en la lista
         ul.appendChild(li);
                 // Limpiamos el campo de input para que quede listo para una nueva tarea
