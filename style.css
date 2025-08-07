@@ -1,3 +1,41 @@
+*{
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header{
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input button{
+    width: 8rem;
+    height: 2rem;
+    background-color: rgb(29, 28, 28);
+    margin: 0.6rem;
+    
+    display: flex;
+    border-radius: 0.8rem;
+}
+
+.input button:hover{
+    background-color: rgb(30, 30, 30);
+}
+
 .completed{
     text-decoration: line-through;
     opacity: 0.5;

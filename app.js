@@ -30,7 +30,7 @@ button.addEventListener("click", function () {
 
         // Creamos un botón para eliminar la tarea
         const deletedBtn = document.createElement("button");
-        deletedBtn.textContent = "🗑️"; // Icono de basura como texto del botón
+        deletedBtn.textContent = "Eliminar🗑️"; // Icono de basura como texto del botón
 
         // Evento para eliminar la tarea cuando se hace clic en el botón
         deletedBtn.addEventListener("click", function (event) {
